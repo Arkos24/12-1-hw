@@ -25,16 +25,16 @@
  Задание 1
 
 
-employee (
-emp_id, primary key, serial
-fio, varchar(50)
-date_from, date
-department_id, smallint REFERENCES department (dep_id)
-position_id smallint references position (pos_id)
-branch_id smallint references branch (branch_id)
-current_project_id smallint references projects (project_id)
-pos_salary money references position (salary)
-)
+employee 
+* emp_id, primary key, serial
+* fio, varchar(50)
+* date_from, date
+*  department_id, smallint REFERENCES department (dep_id)
+*  position_id smallint references position (pos_id)
+*  branch_id smallint references branch (branch_id)
+*  current_project_id smallint references projects (project_id)
+*  pos_salary money references position (salary)
+
 
 department (
 dep_id, primary_key, serial
